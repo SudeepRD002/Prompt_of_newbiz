@@ -1,2 +1,14 @@
 # Prompt_of_newbiz
 Prompt for creating the NewBiz – Free Bootstrap 5 HTML5 Corporate Business website Template.
+#
+Build me a static multi-page agency landing site template called NewBiz using Bootstrap 5.3.3, Bootstrap Icons, and vanilla JavaScript with a custom CSS layer on top. Load Google Fonts for the typography: Roboto for body text, Raleway for headings, and Poppins for navigation. No build pipeline, just plain HTML, CSS, and JS files ready to deploy.
+
+Create a long-scrolling index.html with hashed sections for hero, about, features, services grid, why us cards, stats with animated counters, a portfolio masonry grid filtered by All, App, Product, Branding and Books, testimonials carousel, team grid, client logos, and contact info plus a form. Add inner detail pages that reuse the same header and footer shell: service-details, portfolio-details, and a generic starter page, each with a breadcrumb page-title band above the detail content. Every page gets a sticky header with logo and navmenu, plus a footer with newsletter signup and links.
+
+Style it with this exact palette: white background, #444444 default text, #283d50 headings, #007bff accent color, #024286 nav links turning #007bff on hover, light sections at #ecf5ff, and dark sections at #1742a4 with #0d358f surfaces and white text there. Use 60px vertical padding on sections, 90vh minimum height on the hero, and scroll-margin-top at 90px. Keep the feel clean, corporate, and modern.
+
+Wire up all interactions in vanilla JS. Enable smooth scroll globally, a scroll-to-top button after 100px, a preloader removed on load, and AOS scroll animations configured to 600ms duration with ease-in-out easing firing once. Initialize GLightbox for video and image lightboxes, PureCounter for stat numbers, Isotope with imagesLoaded for portfolio filtering and layout, and Swiper for testimonial and detail sliders that read their config from adjacent JSON markup. Support hash navigation that respects scroll-margin-top, and highlight active nav links during scroll with a 200px offset. Include a mobile menu toggle with icon swap and dropdown handling.
+
+For the contact and newsletter forms, implement a front end that POSTs via fetch with FormData, and provide a mock stub backend that returns OK immediately so the forms work without any configuration. The real email relay should be optional. Show a loading state during submission, a green success banner using #059652 for OK responses, and a red error banner using #df1529 for failures. Support optional reCAPTCHA if a site key is present.
+
+Fill the site with realistic placeholder content and image paths. Before finishing, verify the app runs end to end in a browser: exercise the portfolio filters, open a lightbox, scroll past 100px to trigger the scroll-top button, and submit the contact form to confirm the success banner appears.
